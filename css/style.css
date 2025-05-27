@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import 'animate.css';
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+
+}
+
+/* index */
+
+.container-index{
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  bottom: -10%;
+  transform: translate(-50%, -50%); 
+  width: 100%; 
+  text-align: center; 
+  color: #fff;  
+}
+
+
+.btn-index:hover {
+  color: #ffffff;
+  /* Altera a cor do texto */
+  transform: scale(1.1);
+  /* Aumenta ligeiramente o tamanho do botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma sombra */
+  transition: all 0.3s ease;
+  /* Anima as mudanças suavemente */
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+.img-index:hover {
+  transition: all 0.1s ease;
+  transform: scale(1.1);
+  border: 2px solid #FCC419;
+  cursor: pointer;
+}
+
+/* cadastro */
+
+.form-cadastro:hover {
+  border: 1px solid #FCC419;
+  /* Aumenta a espessura da borda e altera a cor */
+  background-color: #f0f8ff;
+  /* Altera a cor de fundo do input */
+  box-shadow: 0 0 10px rgba(234, 255, 0, 0.818);
+  /* Adiciona um efeito de sombra */
+  cursor: pointer;
+}
+
+
+/* Header */
+
+
+/* main */
+
+.btn2 {
+  min-width: 300px;
+  padding: 8px 20px;
+
+}
+
+/* section 2 */
+
+.faq {
+  max-width: fit-content;
+  margin: 50px auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #444;
+}
+
+.faq-question {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #222;
+  font-size: 16px;
+  transition: max-height 0.3s ease;
+}
+
+/* Checkbox Hack: Quando o checkbox é marcado, exibe a resposta */
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked~.faq-answer {
+  max-height: 500px;
+  /* O valor pode ser ajustado conforme a altura do conteúdo */
+  padding: 15px;
+}
+
+/* Adiciona um ícone de mais (+) ou menos (-) para indicar a expansão */
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type="checkbox"]:checked+.faq-question::after {
+  content: '-';
+}
+
+.question1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* footer */
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (orientation: portrait) {
+
+  .centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portraite {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+/* Planos */
+.pricing-plan p {
+  margin-top: 0;
+
+}
+
+.pricing-plan__price {
+  font-size: 34px;
+
+}
+
+.pricing-plan__features {
+  margin: 0 0 35px;
+  color: #fff;
+  padding-left: 16px;
+  line-height: 1.8;
+  /*tamanho da altura da linha*/
+  flex: 1;
+}
+
+.pricing-plan__features li::marker {
+  /*os :: é para trabalahar com pseu do elemento para selecionar qual elemento quero trabalhar*/
+  color: #FCC419;
+}
+
+.pricing-plan__cta {
+  text-decoration: none;
+  /*para retirar o sublinhado da tag <a> */
+  color: #fff;
+  background-color: red;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  /*acrescenta o negrito*/
+  padding: 16px 10px;
+  text-align: center;
+  text-align: center;
+  display: block;
+}
+
+.pricing-plan__cta:hover {
+  outline: 2px solid #FCC419;
+  /*vai desenhar uma borda fora do elemento.  | ele é do elemento para fora e ele não afeta o tamanho do elemento final*/
+  background-color: transparent;
+  color: #FCC419;
+  transform: scale(1.02);
+  /* Aumenta ligeiramente o tamanho do botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma sombra */
+  transition: all 0.3s ease;
+  /* Anima as mudanças suavemente */
+}
+
+.class-plan__title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #FCC419;
+  /*borda - tamanho + linha + cor*/
+  margin-top: 0;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  /*quanto que eu quero de distaciamento de uma letra para a outra */
+  text-align: center;
+  animation: color-change .2s alternate infinite;
+}
+
+.bolder1 {
+  font-weight: bold;
+  color: #FCC419;
+}
+
+@keyframes color-change {
+  from {
+    color: #fff;
+  }
+
+  to {
+    color: #FCC419;
+
+  }
+}
+
+.plans {
+  display: flex;
+  /* Transforma a row em um container flexbox */
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  align-items: stretch;
+  /*Garante que todas as divs tenham a mesma altura */
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn_button {
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  text-align: end;
+
+}
+
+.body_plans {
+  flex: 1;
+  padding: 40px;
+}
+
+
+/* login */
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: auto;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.login-form {
+  min-width: 400px;
+  /* largura*/
+  background-color: #ecf0f1;
+  /* cor de fundo */
+  border-radius: 5px;
+  /* borda arredondada */
+  box-shadow: 3px 3px 10px #333;
+  /*sombra de borda - borda não tenha deslocamento horizontal + eu quero um pequeno deslocamento na vertical + um pouco de esfumaçamento + cor */
+  padding: 1em;
+  /* enchiemnto da borda - 16px */
+}
+
+.login-fieldset {
+  border: none;
+  /* sem borda */
+  padding: 0;
+  margin: 0;
+}
+
+.login-input,
+.login-label {
+  display: block;
+  /*transforma o elemento de linha em elemento de bloco */
+  width: 100%;
+  /* largura */
+  box-sizing: border-box;
+  /*para o padding não somar o total do elemento - some apenas a largura total do elemento */
+}
+
+.login-label {
+  margin-bottom: .25em;
+  /*margem pra baixo */
+}
+
+.login-input {
+  padding: .75em;
+  /*enchimento da borda */
+  border-radius: 5px;
+  /* borda arredondada */
+  margin-bottom: 1.5em;
+  /* */
+  border: 1px solid #bbb;
+  /* */
+  font-size: 1em;
+  /* tamanho da fonte */
+}
+
+.login-legend {
+  padding: 1em;
+  /* */
+  text-align: center;
+  /* texto centralizado */
+  font-weight: bold;
+  /* negrito */
+  color: #454e4f;
+  /* cor da fonte*/
+  font-size: 1.2em;
+  /* tamanho da fonte */
+  margin-bottom: .5em;
+  /* margem embaixo*/
+}
+
+.actions1 {
+  display: flex;
+  /* alinha automaticamente as caixas, ficando na mesma linha */
+  gap: 1em;
+  /* ele vai tratar dos espaços internos - distância entre os elementos */
+}
+
+.login-btn2:hover {
+  transition: all 0.3s ease;
+  /* Anima as mudanças suavemente */
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma sombra */
+}
+
+
+.login-btn2 {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.btn--apagar {
+  background-color: rgba(97, 90, 91, 0.808);
+}
+
+.login-a {
+  text-decoration: none;
+
+}
+
+.login-a:hover {
+  text-decoration: underline;
+}
+
+/* contato */
+
+.form-cont {
+  min-width: 750px;
+  min-height: auto;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+.fom-portrait {
+  width: 80%;
+  margin-left: 20px;
+}
+
+@media screen and (orientation: portrait) {
+  .form-cont {
+    min-width: 350px;
+    min-height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  .fom-portrait {
+    width: 100%;
+    margin: 0;
+  }
+
+
+}
+
+/* quiz */
+
+.quiz-container {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 750px;
+  margin: 30px auto;
+}
+
+.questionario {
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #FCC419;
+}
+
+.questionario1 {
+  margin: 20px 0 30px;
+}
+
+.questionario h3 {
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.options label:hover {
+  font-weight: bold;
+}
+
+.options input:hover {
+  box-shadow: 0 0 10px rgba(234, 255, 0, 0.818)
+}
+
+.media-quiz:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para dispositivos móveis em modo portrait */
+@media (orientation: portrait) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .questionario h3 {
+    font-size: 18px;
+  }
+}
+
+/* Link de quiz */
+
+.glow-on-hover {
+  width: 250px;
+  min-height: 100px;
+  border: none;
+  outline: none;
+  background: #FCC419;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 5s linear infinite;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #FCC419
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FCC419;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

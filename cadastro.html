@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Flix</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <div>
+          <span class="navbar-brand btn-danger"
+            style="color: #FCC419; font-size: 18px; margin: 0 50px 0 20px; font-weight: bold;"> <svg
+              style="color: #FCC419; width: 25%; height: auto;" xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16">
+              <path
+                d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z" />
+              <path
+                d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z" />
+            </svg> Infinite Flix</span>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Séries</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ação</a></li>
+                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                <li><a class="dropdown-item" href="#">Comédia</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Ficão científica</a></li>
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><a class="dropdown-item" href="#">Romance</a></li>
+                <li><a class="dropdown-item" href="#">Animação</a></li>
+                <li><a class="dropdown-item" href="#">Documentário</a></li>
+                <li><a class="dropdown-item" href="#">Suspense</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="planos.html">Planos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Central de Ajuda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="contato.html">Fale Conosco</a></li>
+                <li><a class="dropdown-item" href="#">Cancelamento</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-success btn btn-outline-warning" type="submit"><a href="login.html"
+                style="text-decoration: none; color: inherit">Entrar</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div style="padding: 20px 30px 0 ;text-align: center ;">
+      <h2
+        style="text-shadow: 10px 10px 10px rgba(16, 18, 1, 0.513); text-transform: uppercase; font-weight: bold; font-size: 30px;"
+        class="animate__animated animate__rubberBand">
+        Cadastro </h2>
+    </div>
+    <form class="row g-3 text-bg-dark"
+      style="margin: 20px; background-color: #ecf0f1; border-radius: 5px; box-shadow: 3px 3px 10px #333;">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label"> Nome</label>
+        <input type="text" class="form-control form-cadastro" id="validationDefault01" placeholder="Digite seu nome"
+          required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control form-cadastro" id="validationDefault02"
+          placeholder="Digite seu sobrenome" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputAddress" class="form-label">CPF</label>
+        <input type="text" class="form-control form-cadastro" id="inputAddress" placeholder="Digite seu CPF">
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationDefaultUsername" class="form-label"> Digite seu email</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input type="text" class="form-control form-cadastro" id="validationDefaultUsername"
+            aria-describedby="inputGroupPrepend2" placeholder="Digite seu email" required>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Endereço</label>
+        <input type="text" class="form-control form-cadastro" id="inputAddress" placeholder="Digite seu endereço">
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">Cidade</label>
+        <input type="text" class="form-control form-cadastro" id="validationDefault03" placeholder="Digite sua cidade"
+          required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Estado</label>
+        <select class="form-select form-cadastro" id="validationDefault04" required>
+          <option selected disabled>Selecione seu estado</option>
+          <option>AC</option>
+          <option>AL</option>
+          <option>AP</option>
+          <option>AM</option>
+          <option>BA</option>
+          <option>CE</option>
+          <option>DF</option>
+          <option>ES</option>
+          <option>GO</option>
+          <option>MA</option>
+          <option>MT</option>
+          <option>MS</option>
+          <option>MG</option>
+          <option>PA</option>
+          <option>PB</option>
+          <option>PR</option>
+          <option>PE</option>
+          <option>PI</option>
+          <option>RJ</option>
+          <option>RN</option>
+          <option>RS</option>
+          <option>RO</option>
+          <option>RR</option>
+          <option>SC</option>
+          <option>SP</option>
+          <option>SE</option>
+          <option>TO</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">CEP</label>
+        <input type="text" class="form-control form-cadastro" id="validationDefault05" placeholder="Ex: 99999-999"
+          required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationDefault05" class="form-label">Data de nascimento</label>
+        <input type="date" class="form-control form-cadastro" id="validationDefault05" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationDefault05" class="form-label">Telefone</label>
+        <input type="tel" class="form-control form-cadastro" id="validationDefault05" placeholder="Ex: (99) 99999-9999"
+          required>
+      </div>
+
+      <div class="col-md-6">
+        <select class="form-select form-cadastro" required aria-label="select example">
+          <option selected disabled>Escolha seu plano</option>
+          <option value="1">Infinite + Padrão</option>
+          <option value="2">Infinite + Premium</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <select class="form-select form-cadastro" required aria-label="select example">
+          <option selected disabled>Escolha sua categoria preferida</option>
+          <option value="1">Ação</option>
+          <option value="2">Aventura</option>
+          <option value="3">Comédia</option>
+          <option value="4">Drama</option>
+          <option value="5">Ficão científica</option>
+          <option value="6">Terror</option>
+          <option value="7">Romance</option>
+          <option value="8">Animação</option>
+          <option value="9">Documentário</option>
+          <option value="10">Suspense</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="formFile" class="form-label">Envie seu documento com foto</label>
+        <input class="form-control form-cadastro" type="file" id="formFile">
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationDefault05" class="form-label">Crie sua senha</label>
+        <input type="password " class="form-control form-cadastro" id="validationDefault05"
+          placeholder="Digite no mínimo 8 caracteres" required>
+      </div>
+
+      <div class="d-grid gap-2 col-3 mx-auto btn2" style="max-width: fit-content;  ">
+        <button class="btn btn-outline-success btn btn-outline-warning btn-lg " type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="text-bg-dark p-3">
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <a href="#">Perguntas frequentes</a>
+        <a href="#">Relações com investidores</a>
+        <a href="#">Formas de assistir</a>
+        <a href="#">Informações corporativas</a>
+        <a href="#">Só na Netflix</a>
+      </div>
+
+      <div class="footer-column">
+        <a href="#">Central de Ajuda</a>
+        <a href="#">Carreiras</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Entre em contato</a>
+      </div>
+
+      <div class="footer-column">
+        <a href="#">Conta</a>
+        <a href="#">Resgatar cartão pré-pago</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Teste de velocidade</a>
+      </div>
+
+      <div class="footer-column">
+        <a href="#">Media Center</a>
+        <a href="#">Comprar cartão pré-pago</a>
+        <a href="#">Preferências de cookies</a>
+        <a href="#">Avisos legais</a>
+      </div>
+    </div>
+
+    <div style="width: 100%; text-align: center;">
+      <span class="navbar-brand btn-danger" style="color: #FCC419; font-size: 18px; margin: 0 50px 0 20px;"> <svg
+          style="color: #FCC419; max-width: 200px; height: fit-content; align-items: center;"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play"
+          viewBox="0 0 16 16">
+          <path
+            d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z" />
+          <path
+            d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z" />
+        </svg> Infinite Flix</span>
+      <p>© 2024, Infinite.com, Inc. ou suas afiliadas</p>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
